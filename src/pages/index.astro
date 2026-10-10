@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
+import LiquidFeatures from "../components/LiquidFeatures.tsx";
 ---
 
 <Layout title="Welcome to Varnion">
@@ -115,103 +116,8 @@ import Navbar from "../components/Navbar.astro";
     </div>
   </main>
 
-  <!-- Features/Products Section -->
-  <section class="relative py-24 bg-slate-950">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="reveal-glass text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
-          Innovative Products
-        </h2>
-        <p class="text-slate-400 text-lg">
-          We deliver cutting-edge technology for everyone. Explore our wide
-          range of scalable software and hardware solutions tailored for your
-          business needs.
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Card 1 -->
-        <div
-          class="reveal-glass group bg-slate-900/50 border border-slate-800 rounded-3xl p-8 hover:bg-slate-800/50 transition-colors cursor-pointer"
-        >
-          <div
-            class="w-14 h-14 bg-indigo-500/10 rounded-2xl flex items-center justify-center mb-6 text-indigo-400 group-hover:scale-110 transition-transform"
-          >
-            <svg
-              class="w-7 h-7"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              ><path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg
-            >
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">High Performance</h3>
-          <p class="text-slate-400">
-            Blazing fast infrastructure that scales with your growth natively.
-          </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div
-          class="reveal-glass group bg-slate-900/50 border border-slate-800 rounded-3xl p-8 hover:bg-slate-800/50 transition-colors cursor-pointer"
-          style="transition-delay: 150ms;"
-        >
-          <div
-            class="w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center mb-6 text-purple-400 group-hover:scale-110 transition-transform"
-          >
-            <svg
-              class="w-7 h-7"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              ><path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2-2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-              ></path></svg
-            >
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Secure by Design</h3>
-          <p class="text-slate-400">
-            Top-tier security protocols embedded into the core of our solutions.
-          </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div
-          class="reveal-glass group bg-slate-900/50 border border-slate-800 rounded-3xl p-8 hover:bg-slate-800/50 transition-colors cursor-pointer"
-          style="transition-delay: 300ms;"
-        >
-          <div
-            class="w-14 h-14 bg-pink-500/10 rounded-2xl flex items-center justify-center mb-6 text-pink-400 group-hover:scale-110 transition-transform"
-          >
-            <svg
-              class="w-7 h-7"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              ><path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-              ></path></svg
-            >
-          </div>
-          <h3 class="text-xl font-bold text-white mb-3">Media Integration</h3>
-          <p class="text-slate-400">
-            Seamless support for MinIO object storage and video streaming
-            assets.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Features Built to Simplify Section -->
+  <LiquidFeatures client:visible />
 
   <!-- About Section with Image Placeholder -->
   <section class="py-24 bg-slate-900">
